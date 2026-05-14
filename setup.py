@@ -20,6 +20,6 @@ setup(
     version = "0.0.1",
     author = "Tanvi",
     author_email = "tanviagarwal785@gmail.com",
-    packages = find_packages(),
+    packages = find_packages(), #automatically finds all folders with __init__.py and includes them. You don't have to list them manually.
     install_requires = get_requirements("requirements.txt")
     )
