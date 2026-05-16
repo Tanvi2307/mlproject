@@ -1,4 +1,5 @@
 import sys
+from src.logger import logging
 
 def error_msg_detail(error, error_detail:sys):
     _,_,exc_tb = error_detail.exc_info() #exc_info returns 3 things -> error type, error value(msg), error traceback(where it happened)
@@ -13,4 +14,10 @@ class CustomException(Exception):
         
     def __str__(self):
         return self.error_msg
-    
+ 
+# if __name__ == "__main__":   
+#     try:
+#         a = 1/0
+#     except Exception as e:
+#         logging.info("Divide by zero")
+#         raise CustomException(e, sys)
