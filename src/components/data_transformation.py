@@ -61,7 +61,7 @@ class DataTransformation:
             
             logging.info("Read train and test data completed")
             logging.info("Obtaining preprocessing object")
-            preprocessing_obj = self.get_data_transformer_object()
+            preprocessing_obj = self.get_data_transformer_object() #self.get_data_transformer_object() means "call the get_data_transformer_object method that belongs to this same class object" — without self, Python wouldn't know where to find it.
             
             target_column_name="math_score"
             input_feature_train_df=train_df.drop(columns=[target_column_name])
