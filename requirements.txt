@@ -1,11 +1,11 @@
 pandas
 numpy
-seaborn
-matplotlib
-ipykernel
-scikit-learn
-xgboost
-catboost
+# seaborn
+# matplotlib
+# ipykernel
+scikit-learn==1.3.2
+# xgboost
+# catboost
 dill
 flask
 # -e . 
